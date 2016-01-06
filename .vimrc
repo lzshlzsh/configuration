@@ -14,6 +14,8 @@ if v:progname =~? "evim"
   finish
 endif
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" https://github.com/VundleVim/Vundle.vim
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -27,12 +29,18 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-"Bundle 'gmarik/Vundle.vim'
-Bundle 'lervag/vim-latex'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'leshill/vim-json'
-Bundle 'minibufexpl.vim'
-Bundle 'winmanager'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'https://github.com/vim-scripts/Visual-Mark'
+Plugin 'https://github.com/vim-scripts/winmanager'
+Plugin 'https://github.com/scrooloose/nerdtree'
+Plugin 'https://github.com/vim-scripts/taglist.vim'
+Plugin 'https://github.com/vim-scripts/minibufexpl.vim'
+Plugin 'https://github.com/vim-latex/vim-latex'
+Plugin 'https://github.com/derekwyatt/vim-scala'
+Plugin 'https://github.com/ervandew/supertab'
+Plugin 'https://github.com/leshill/vim-json'
+Plugin 'https://github.com/vim-scripts/c.vim'
+Plugin 'https://github.com/nathanaelkane/vim-indent-guides'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -65,6 +73,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -143,6 +152,7 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set number
 set shiftwidth=4
 set tabstop=4
@@ -172,25 +182,27 @@ silent !stty -ixon
 autocmd VimLeave * silent !stty ixon
 autocmd BufWritePost * silent :TlistUpdate
 
+set foldmethod=syntax
+" 启动 vim 时关闭折叠代码
+set nofoldenable
+
 " vimdiff
 if &diff
 	colors blue
 endif
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ctags & tlist
 let Tlist_Show_One_File=1  
 let Tlist_Exit_OnlyWindow=1  
 let Tlist_Use_SingleClick=1
 " let Tlist_Display_Prototype=1
-map<F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
+" map<F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
 map<C-F12> :!cscope -Rbq<CR>:cscope reset<CR><CR>
 map<C-F11> : e ++enc=gb2312<CR>
 
-" OmniCppComplete
-set nocp
-filetype plugin on
-
-" winmanager
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" winmanager & nerdtree
 let g:winManagerWindowLayout='NERDTree|TagList'
 let g:NERDTree_title='[NERD Tree]'
 let NERDTreeWinPos="right"
@@ -202,8 +214,9 @@ endfunction
 function! NERDTree_IsValid()
     return 1
 endfunction
-map<F2> :WMToggle<CR>
+map<F2> :if IsWinManagerVisible()<BAR> WMToggle<CR> <BAR> else <BAR> WMToggle<CR>:q<CR> endif <CR> 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " cscope
 if has("cscope")
     set csprg=/usr/bin/cscope
@@ -243,15 +256,30 @@ nmap <C-Space>f :scs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-Space>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-Space>d :scs find d <C-R>=expand("<cword>")<CR><CR>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 noremap <C-w> :b!#<CR>
 noremap <C-a> :A!<CR>
 inoremap <C-a> <Esc>:A<CR>
 inoremap <C-s> <Esc>:update<CR>
 nnoremap <C-s> :update<CR>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " miniBuf
 let g:miniBufExplMapWindowNavVim=1
 let g:miniBufExplMapWindowNavArrows=1
 let g:miniBufExplMapCTabSwitchBufs=1
 let g:miniBufExplModSelTarget=1 
 let g:miniBufExplUseSingleClick=1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"vim-ident-guides
+" 随 vim 自启动
+let g:indent_guides_enable_on_vim_startup=1
+" 从第二层开始可视化显示缩进
+let g:indent_guides_start_level=2
+" 色块宽度
+let g:indent_guides_guide_size=1
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+colorscheme default
