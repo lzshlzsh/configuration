@@ -37,7 +37,6 @@ Plugin 'https://github.com/vim-scripts/taglist.vim'
 Plugin 'https://github.com/vim-scripts/minibufexpl.vim'
 Plugin 'https://github.com/vim-latex/vim-latex'
 Plugin 'https://github.com/derekwyatt/vim-scala'
-Plugin 'https://github.com/ervandew/supertab'
 Plugin 'https://github.com/leshill/vim-json'
 Plugin 'https://github.com/vim-scripts/c.vim'
 Plugin 'https://github.com/nathanaelkane/vim-indent-guides'
@@ -283,3 +282,8 @@ let g:indent_guides_auto_colors=0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 colorscheme default
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" YouCompletMe
+" let g:ycm_global_ycm_extra_conf='/home/lzs/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf=0
