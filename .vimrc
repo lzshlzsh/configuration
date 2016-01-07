@@ -29,7 +29,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'https://github.com/ervandew/supertab'
 Plugin 'https://github.com/vim-scripts/Visual-Mark'
 Plugin 'https://github.com/vim-scripts/winmanager'
 Plugin 'https://github.com/scrooloose/nerdtree'
@@ -41,6 +42,7 @@ Plugin 'https://github.com/leshill/vim-json'
 Plugin 'https://github.com/vim-scripts/c.vim'
 Plugin 'https://github.com/nathanaelkane/vim-indent-guides'
 Plugin 'https://github.com/mbriggs/mark.vim'
+Plugin 'https://github.com/vim-scripts/a.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -287,4 +289,4 @@ colorscheme default
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " YouCompletMe
 " let g:ycm_global_ycm_extra_conf='/home/lzs/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf=0
+" let g:ycm_confirm_extra_conf=0
