@@ -40,6 +40,7 @@ Plugin 'https://github.com/derekwyatt/vim-scala'
 Plugin 'https://github.com/leshill/vim-json'
 Plugin 'https://github.com/vim-scripts/c.vim'
 Plugin 'https://github.com/nathanaelkane/vim-indent-guides'
+Plugin 'https://github.com/mbriggs/mark.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
