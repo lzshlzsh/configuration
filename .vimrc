@@ -272,6 +272,8 @@ let g:miniBufExplMapWindowNavArrows=1
 let g:miniBufExplMapCTabSwitchBufs=1
 let g:miniBufExplModSelTarget=1 
 let g:miniBufExplUseSingleClick=1
+" prevent fileexplorer height changing
+let g:miniBufExplorerMoreThanOne=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "vim-ident-guides
