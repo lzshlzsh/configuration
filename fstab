@@ -1,0 +1,15 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Sun Jun 22 03:05:23 2014
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/fedora00-root /                       ext4    defaults        1 1
+UUID=6790da07-bb97-4afa-bb96-f512c5502ed7 /boot                   ext4    defaults        1 2
+UUID=7F39-0BB0          /boot/efi               vfat    umask=0077,shortname=winnt 0 0
+/dev/mapper/fedora00-swap swap                    swap    defaults        0 0
+/dev/mapper/fedora-home /home                    ext4    defaults        0 0
+/dev/mapper/fedora-data /data                    ext4    defaults        0 0
+//10.12.23.99/sammieliu	/home/lzs/tencent/dev64	cifs	user=sammieliu,pass=oss@nicking$,uid=1000,gid=1000	0	0
