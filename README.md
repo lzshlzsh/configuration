@@ -46,3 +46,8 @@ drwxr-xr-x.  6 root root  4096 Jun 22  2014 srvframework2.7.2
 drwxr-xr-x.  4 root root  4096 Dec  4 15:37 var
 lrwxrwxrwx.  1 root root    18 Mar 13  2015 WebStorm -> WebStorm-139.1112/
 drwxrwxr-x.  7 root root  4096 Mar 13  2015 WebStorm-139.1112
+
+2. /etc/bashrc
+export JAVA_HOME="/usr/local/java/jdk1.7.0_45"
+export PATH="$PATH:$JAVA_HOME/bin"
+export CLASSPATH="$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/lib"
