@@ -1,0 +1,12 @@
+Filesystem                 Size  Used Avail Use% Mounted on
+devtmpfs                   7.8G     0  7.8G   0% /dev
+tmpfs                      7.8G   24M  7.8G   1% /dev/shm
+tmpfs                      7.8G  1.6M  7.8G   1% /run
+tmpfs                      7.8G     0  7.8G   0% /sys/fs/cgroup
+/dev/mapper/fedora00-root   20G   14G  4.9G  74% /
+tmpfs                      7.8G   64K  7.8G   1% /tmp
+/dev/sdb4                  488M   84M  370M  19% /boot
+/dev/sdb1                  100M   45M   56M  45% /boot/efi
+/dev/mapper/fedora-home     98G   76G   18G  82% /home
+/dev/mapper/fedora-data    262G  116G  134G  47% /data
+tmpfs                      1.6G   24K  1.6G   1% /run/user/1000
