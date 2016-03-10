@@ -44,7 +44,6 @@ Plugin 'https://github.com/nathanaelkane/vim-indent-guides'
 Plugin 'https://github.com/mbriggs/mark.vim'
 Plugin 'https://github.com/vim-scripts/a.vim'
 Plugin 'https://github.com/plasticboy/vim-markdown.git'
-Plugin 'https://github.com/JamshedVesuna/vim-markdown-preview.git'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -296,7 +295,3 @@ colorscheme default
 " let g:ycm_confirm_extra_conf=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" markdown
-let g:vim_markdown_preview_use_xdg_open = 1
-let g:vim_markdown_preview_toggle = 0
-" let g:vim_markdown_preview_temp_file = 1
