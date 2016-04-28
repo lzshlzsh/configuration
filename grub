@@ -3,7 +3,7 @@ GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
 GRUB_DEFAULT=saved
 GRUB_DISABLE_SUBMENU=true
 GRUB_TERMINAL_OUTPUT="console"
-GRUB_CMDLINE_LINUX="rd.lvm.lv=fedora00/swap rd.lvm.lv=fedora00/root nouveau.modeset=0 rd.driver.blacklist=nouveau rhgb quiet rd.driver.blacklist=nouveau"
+GRUB_CMDLINE_LINUX="rd.lvm.lv=fedora00/swap rd.lvm.lv=fedora00/root nouveau.modeset=0 rd.driver.blacklist=nouveau rhgb quiet rd.driver.blacklist=nouveau net.ifnames=0 biodevame=0"
 GRUB_DISABLE_RECOVERY="true"
 
 
