@@ -45,6 +45,8 @@ Plugin 'https://github.com/mbriggs/mark.vim'
 Plugin 'https://github.com/vim-scripts/a.vim'
 Plugin 'https://github.com/plasticboy/vim-markdown.git'
 Plugin 'https://github.com/suan/vim-instant-markdown.git'
+Plugin 'https://github.com/vim-scripts/vim-auto-save'
+Plugin 'https://github.com/kien/ctrlp.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -300,3 +302,17 @@ colorscheme default
 let g:instant_markdown_autostart = 0
 inoremap <C-p> <Esc>:InstantMarkdownPreview<CR>
 nnoremap <C-p> :InstantMarkdownPreview<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" AutoSave
+let g:auto_save = 1  " enable AutoSave on Vim startup
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" CtrlP
+let g:ctrlp_map = ',,'
+" set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
