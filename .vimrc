@@ -313,6 +313,6 @@ let g:ctrlp_map = ',,'
 " set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll|a|swp|gz|bz2)$|cscope\.',
+  \ 'file': '\v\.(exe|so|dll|a|swp|gz|bz2|o)$|cscope\.',
   \ 'link': 'some_bad_symbolic_links',
   \ }
