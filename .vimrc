@@ -310,6 +310,7 @@ let g:auto_save = 1  " enable AutoSave on Vim startup
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP
 let g:ctrlp_map = ',,'
+let g:ctrlp_max_height = 1000
 " set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
