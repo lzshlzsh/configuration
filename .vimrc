@@ -201,7 +201,7 @@ endif
 " ctags & tlist
 let Tlist_Show_One_File=1  
 let Tlist_Exit_OnlyWindow=1  
-let Tlist_Use_SingleClick=0
+let Tlist_Use_SingleClick=1
 " let Tlist_Display_Prototype=1
 " map<F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
 map<C-F12> :!cscope -Rbq<CR>:cscope reset<CR><CR>
