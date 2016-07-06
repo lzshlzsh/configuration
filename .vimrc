@@ -268,6 +268,8 @@ noremap <C-a> :A!<CR>
 inoremap <C-a> <Esc>:A<CR>
 inoremap <C-s> <Esc>:update<CR>
 nnoremap <C-s> :update<CR>
+inoremap <C-q> <Esc>:qa<CR>
+nnoremap <C-q> :qa<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " miniBuf
