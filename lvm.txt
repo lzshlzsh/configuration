@@ -31,6 +31,74 @@
   Allocated PE          68044
   PV UUID               Ks0iX6-aBUi-eLuJ-tHAE-kvdK-T6Rf-UiYCEx
    
+  --- Logical volume ---
+  LV Path                /dev/fedora00/swap
+  LV Name                swap
+  VG Name                fedora00
+  LV UUID                X7fTEr-vTEW-C6gb-K8yC-afQr-Qy52-mFdLDE
+  LV Write Access        read/write
+  LV Creation host, time localhost, 2014-06-22 11:05:15 +0800
+  LV Status              available
+  # open                 2
+  LV Size                4.88 GiB
+  Current LE             1250
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:0
+   
+  --- Logical volume ---
+  LV Path                /dev/fedora00/root
+  LV Name                root
+  VG Name                fedora00
+  LV UUID                xC82q0-mQne-BO07-NVDX-nmD8-FRSo-IT5mvd
+  LV Write Access        read/write
+  LV Creation host, time localhost, 2014-06-22 11:05:15 +0800
+  LV Status              available
+  # open                 1
+  LV Size                20.11 GiB
+  Current LE             5149
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:1
+   
+  --- Logical volume ---
+  LV Path                /dev/fedora/home
+  LV Name                home
+  VG Name                fedora
+  LV UUID                Y7u2DR-BFn7-gXcO-g0a2-Ioxr-MHgl-6CcCrM
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2013-10-20 11:09:42 +0800
+  LV Status              available
+  # open                 1
+  LV Size                99.07 GiB
+  Current LE             25362
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:2
+   
+  --- Logical volume ---
+  LV Path                /dev/fedora/data
+  LV Name                data
+  VG Name                fedora
+  LV UUID                wMRmoC-aYc6-7HcV-qduE-Rgzk-z3Fn-NjcomA
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2013-10-20 12:51:20 +0800
+  LV Status              available
+  # open                 1
+  LV Size                265.80 GiB
+  Current LE             68044
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:3
+   
   --- Volume group ---
   VG Name               fedora00
   System ID             
@@ -72,72 +140,4 @@
   Alloc PE / Size       93406 / 364.87 GiB
   Free  PE / Size       0 / 0   
   VG UUID               Eoas2H-vKMJ-ctq6-Zjuk-0Jya-bEPG-k063UI
-   
-  --- Logical volume ---
-  LV Path                /dev/fedora00/swap
-  LV Name                swap
-  VG Name                fedora00
-  LV UUID                X7fTEr-vTEW-C6gb-K8yC-afQr-Qy52-mFdLDE
-  LV Write Access        read/write
-  LV Creation host, time localhost, 2014-06-22 11:05:15 +0800
-  LV Status              available
-  # open                 2
-  LV Size                4.88 GiB
-  Current LE             1250
-  Segments               1
-  Allocation             inherit
-  Read ahead sectors     auto
-  - currently set to     256
-  Block device           253:1
-   
-  --- Logical volume ---
-  LV Path                /dev/fedora00/root
-  LV Name                root
-  VG Name                fedora00
-  LV UUID                xC82q0-mQne-BO07-NVDX-nmD8-FRSo-IT5mvd
-  LV Write Access        read/write
-  LV Creation host, time localhost, 2014-06-22 11:05:15 +0800
-  LV Status              available
-  # open                 1
-  LV Size                20.11 GiB
-  Current LE             5149
-  Segments               1
-  Allocation             inherit
-  Read ahead sectors     auto
-  - currently set to     256
-  Block device           253:0
-   
-  --- Logical volume ---
-  LV Path                /dev/fedora/home
-  LV Name                home
-  VG Name                fedora
-  LV UUID                Y7u2DR-BFn7-gXcO-g0a2-Ioxr-MHgl-6CcCrM
-  LV Write Access        read/write
-  LV Creation host, time localhost.localdomain, 2013-10-20 11:09:42 +0800
-  LV Status              available
-  # open                 1
-  LV Size                99.07 GiB
-  Current LE             25362
-  Segments               1
-  Allocation             inherit
-  Read ahead sectors     auto
-  - currently set to     256
-  Block device           253:2
-   
-  --- Logical volume ---
-  LV Path                /dev/fedora/data
-  LV Name                data
-  VG Name                fedora
-  LV UUID                wMRmoC-aYc6-7HcV-qduE-Rgzk-z3Fn-NjcomA
-  LV Write Access        read/write
-  LV Creation host, time localhost.localdomain, 2013-10-20 12:51:20 +0800
-  LV Status              available
-  # open                 1
-  LV Size                265.80 GiB
-  Current LE             68044
-  Segments               1
-  Allocation             inherit
-  Read ahead sectors     auto
-  - currently set to     256
-  Block device           253:3
    
