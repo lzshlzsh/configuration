@@ -4,6 +4,8 @@ set -e
 DIR=`cd $(dirname $0) && pwd`
 cd $DIR
 
+declare -A SYMLINK_MAP
+
 function backup() 
 {
     cp -fv /etc/bashrc . 
@@ -18,6 +20,18 @@ function backup()
     ls -l /opt/ /usr/local/ >opt_usr_local.txt
 
     dnf list installed >installed.txt
+
+    crontab -l -u root >root.crontab
+    crontab -l -u lzs >lzs.crontab
+}
+
+function get_symlink()
+{
+    if [ $# -ne 1 ]; then
+        echo "get_symlink file"
+        return 1
+    fi
+
 }
 
 function restore()
