@@ -47,6 +47,7 @@ Plugin 'https://github.com/plasticboy/vim-markdown.git'
 Plugin 'https://github.com/suan/vim-instant-markdown.git'
 Plugin 'https://github.com/vim-scripts/vim-auto-save'
 Plugin 'https://github.com/kien/ctrlp.vim'
+Plugin 'https://github.com/ekalinin/Dockerfile.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
