@@ -90,6 +90,3 @@ if ! shopt -q login_shell ; then # We're not a login shell
     unset -f pathmunge
 fi
 # vim:ts=4:sw=4
-export JAVA_HOME="/usr/local/java/jdk1.7.0_45"
-export PATH="$PATH:$JAVA_HOME/bin"
-export CLASSPATH="$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/lib"

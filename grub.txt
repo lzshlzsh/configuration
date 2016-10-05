@@ -1,14 +1,13 @@
-lrwxrwxrwx. 1 root root   22 Jun 11 02:31 /etc/grub2.cfg -> ../boot/grub2/grub.cfg
-lrwxrwxrwx. 1 root root   31 Jun 11 02:31 /etc/grub2-efi.cfg -> ../boot/efi/EFI/fedora/grub.cfg
+lrwxrwxrwx. 1 root root   22 Dec 11  2015 /etc/grub2.cfg -> ../boot/grub2/grub.cfg
+lrwxrwxrwx. 1 root root   31 Dec 11  2015 /etc/grub2-efi.cfg -> ../boot/efi/EFI/fedora/grub.cfg
 
 /etc/grub.d:
 total 64
--rwxr-xr-x. 1 root root  8698 Jun 11 02:31 00_header
--rwxr-xr-x. 1 root root   232 Jun 11 02:31 01_users
--rwxr-xr-x. 1 root root 10202 Jun 11 02:31 10_linux
--rwxr-xr-x. 1 root root 10484 Jun 11 02:31 20_linux_xen
--rwxr-xr-x. 1 root root  2559 Jun 11 02:31 20_ppc_terminfo
--rwxr-xr-x. 1 root root 12062 Jun 11 02:31 30_os-prober
-lrwxrwxrwx. 1 root root    47 Feb  3  2016 40_custom -> /home/lzs/github/configuration/grub.d/40_custom
--rwxr-xr-x. 1 root root   216 Jun 11 02:31 41_custom
--rw-r--r--. 1 root root   483 Jun 11 02:31 README
+-rwxr-xr-x. 1 root root  8702 Dec 11  2015 00_header
+-rwxr-xr-x. 1 root root 10087 Oct  5 17:32 10_linux
+-rwxr-xr-x. 1 root root 10275 Dec 11  2015 20_linux_xen
+-rwxr-xr-x. 1 root root  2559 Dec 11  2015 20_ppc_terminfo
+-rwxr-xr-x. 1 root root 11703 Dec 11  2015 30_os-prober
+-rwxr-xr-x. 1 root root   214 Dec 11  2015 40_custom
+-rwxr-xr-x. 1 root root   216 Dec 11  2015 41_custom
+-rw-r--r--. 1 root root   483 Dec 11  2015 README
