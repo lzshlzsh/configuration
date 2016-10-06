@@ -1,2 +1,2 @@
-#SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="28:d2:44:1c:fb:17", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="eth1"
-SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="b0:05:94:ef:42:93", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="wlan*", NAME="eth1"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:21:cc:bf:eb:b5", ATTR{dev_id}=="0x0", ATTR{type}=="1", NAME="eth0"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="b0:05:94:ef:42:93", ATTR{dev_id}=="0x0", ATTR{type}=="1", NAME="eth1"
