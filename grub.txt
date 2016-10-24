@@ -4,7 +4,7 @@ lrwxrwxrwx. 1 root root   31 Dec 11  2015 /etc/grub2-efi.cfg -> ../boot/efi/EFI/
 /etc/grub.d:
 total 64
 -rwxr-xr-x. 1 root root  8702 Dec 11  2015 00_header
--rwxr-xr-x. 1 root root 10087 Oct  5 17:32 10_linux
+-rwxr-xr-x. 1 root root 10087 Oct 13 11:44 10_linux
 -rwxr-xr-x. 1 root root 10275 Dec 11  2015 20_linux_xen
 -rwxr-xr-x. 1 root root  2559 Dec 11  2015 20_ppc_terminfo
 -rwxr-xr-x. 1 root root 11703 Dec 11  2015 30_os-prober

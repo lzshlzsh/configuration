@@ -1,15 +1,4 @@
   --- Physical volume ---
-  PV Name               /dev/sdb3
-  VG Name               fedora_msata
-  PV Size               237.78 GiB / not usable 0   
-  Allocatable           yes (but full)
-  PE Size               4.00 MiB
-  Total PE              60871
-  Free PE               0
-  Allocated PE          60871
-  PV UUID               Q4WF0x-0fVm-5dEa-2l1F-nBpv-3NT2-acSaWx
-   
-  --- Physical volume ---
   PV Name               /dev/sda1
   VG Name               fedora_sata3
   PV Size               465.76 GiB / not usable 3.00 MiB
@@ -20,56 +9,16 @@
   Allocated PE          119234
   PV UUID               9pTlDq-7UjY-KQ1R-1Hkl-WQdv-5Hnt-uA2nZY
    
-  --- Logical volume ---
-  LV Path                /dev/fedora_msata/root
-  LV Name                root
-  VG Name                fedora_msata
-  LV UUID                Hpcd0V-MwOt-32zR-2bf2-ns8e-qvpb-hUpQU8
-  LV Write Access        read/write
-  LV Creation host, time fedora, 2016-10-05 14:23:31 +0800
-  LV Status              available
-  # open                 1
-  LV Size                32.00 GiB
-  Current LE             8192
-  Segments               1
-  Allocation             inherit
-  Read ahead sectors     auto
-  - currently set to     256
-  Block device           253:0
-   
-  --- Logical volume ---
-  LV Path                /dev/fedora_msata/swap
-  LV Name                swap
-  VG Name                fedora_msata
-  LV UUID                YklaZd-BhTD-342K-khxC-Gkse-0jA1-qO5tdL
-  LV Write Access        read/write
-  LV Creation host, time fedora, 2016-10-05 14:23:43 +0800
-  LV Status              available
-  # open                 2
-  LV Size                8.00 GiB
-  Current LE             2048
-  Segments               1
-  Allocation             inherit
-  Read ahead sectors     auto
-  - currently set to     256
-  Block device           253:1
-   
-  --- Logical volume ---
-  LV Path                /dev/fedora_msata/home
-  LV Name                home
-  VG Name                fedora_msata
-  LV UUID                eAy9rV-qxWc-2Lbf-JFCh-kYwc-DFg2-NVc3dO
-  LV Write Access        read/write
-  LV Creation host, time fedora, 2016-10-05 14:42:16 +0800
-  LV Status              available
-  # open                 1
-  LV Size                197.78 GiB
-  Current LE             50631
-  Segments               1
-  Allocation             inherit
-  Read ahead sectors     auto
-  - currently set to     256
-  Block device           253:2
+  --- Physical volume ---
+  PV Name               /dev/sdb3
+  VG Name               fedora_msata
+  PV Size               232.19 GiB / not usable 2.00 MiB
+  Allocatable           yes (but full)
+  PE Size               4.00 MiB
+  Total PE              59440
+  Free PE               0
+  Allocated PE          59440
+  PV UUID               fHFjQ7-kb61-pQOf-NcFd-uBfM-IZUt-aWzufT
    
   --- Logical volume ---
   LV Path                /dev/fedora_sata3/data
@@ -88,26 +37,56 @@
   - currently set to     256
   Block device           253:3
    
-  --- Volume group ---
-  VG Name               fedora_msata
-  System ID             
-  Format                lvm2
-  Metadata Areas        1
-  Metadata Sequence No  5
-  VG Access             read/write
-  VG Status             resizable
-  MAX LV                0
-  Cur LV                3
-  Open LV               3
-  Max PV                0
-  Cur PV                1
-  Act PV                1
-  VG Size               237.78 GiB
-  PE Size               4.00 MiB
-  Total PE              60871
-  Alloc PE / Size       60871 / 237.78 GiB
-  Free  PE / Size       0 / 0   
-  VG UUID               zMVp6e-Jddt-Cm7E-AiN5-0kkM-lFd4-q1X1Uf
+  --- Logical volume ---
+  LV Path                /dev/fedora_msata/swap
+  LV Name                swap
+  VG Name                fedora_msata
+  LV UUID                O0ntb8-5EnY-iMXv-96eW-aRCx-btVi-G1A1cu
+  LV Write Access        read/write
+  LV Creation host, time fedora, 2016-10-13 10:25:28 +0800
+  LV Status              available
+  # open                 2
+  LV Size                8.00 GiB
+  Current LE             2048
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:1
+   
+  --- Logical volume ---
+  LV Path                /dev/fedora_msata/root
+  LV Name                root
+  VG Name                fedora_msata
+  LV UUID                H6Tso5-rqtz-UmKD-6VLT-bpP9-d9wx-srdQBz
+  LV Write Access        read/write
+  LV Creation host, time fedora, 2016-10-13 10:25:28 +0800
+  LV Status              available
+  # open                 1
+  LV Size                32.00 GiB
+  Current LE             8192
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:0
+   
+  --- Logical volume ---
+  LV Path                /dev/fedora_msata/home
+  LV Name                home
+  VG Name                fedora_msata
+  LV UUID                aCo94O-yKQS-zYn5-xDBK-0nz3-jfWf-mLVr4s
+  LV Write Access        read/write
+  LV Creation host, time fedora, 2016-10-13 10:35:17 +0800
+  LV Status              available
+  # open                 1
+  LV Size                192.19 GiB
+  Current LE             49200
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:2
    
   --- Volume group ---
   VG Name               fedora_sata3
@@ -129,4 +108,25 @@
   Alloc PE / Size       119234 / 465.76 GiB
   Free  PE / Size       0 / 0   
   VG UUID               zzRr5v-zMvN-dj8R-7FPK-mKx8-RZwe-gMws7E
+   
+  --- Volume group ---
+  VG Name               fedora_msata
+  System ID             
+  Format                lvm2
+  Metadata Areas        1
+  Metadata Sequence No  5
+  VG Access             read/write
+  VG Status             resizable
+  MAX LV                0
+  Cur LV                3
+  Open LV               3
+  Max PV                0
+  Cur PV                1
+  Act PV                1
+  VG Size               232.19 GiB
+  PE Size               4.00 MiB
+  Total PE              59440
+  Alloc PE / Size       59440 / 232.19 GiB
+  Free  PE / Size       0 / 0   
+  VG UUID               h4UxCL-Mw7W-uAkB-CSkj-lGuU-1uRp-YK1toK
    

@@ -1,28 +1,29 @@
 /opt/:
-total 4
-lrwxrwxrwx. 1 root root   41 Oct  5 17:35 code-client-linux_x64 -> /home/lzs/Downloads/code-client-linux_x64
-lrwxrwxrwx. 1 root root   30 Oct  5 17:36 deepin-screenshot -> /data/github/deepin-screenshot
-drwxr-xr-x. 3 root root 4096 Oct  5 18:16 google
-lrwxrwxrwx. 1 root root   27 Oct  5 17:36 idea-IC -> /home/lzs/Downloads/idea-IC
-lrwxrwxrwx. 1 root root   30 Oct  5 17:36 scrt -> /home/lzs/Downloads/scrt-7.3.6
-lrwxrwxrwx. 1 root root   25 Oct  5 17:36 xmind -> /home/lzs/Downloads/xmind
+total 8
+drwxr-xr-x. 3 root root 4096 Oct 17 16:10 Citrix
+lrwxrwxrwx. 1 root root   41 Oct 13 11:37 code-client-linux_x64 -> /home/lzs/Downloads/code-client-linux_x64
+lrwxrwxrwx. 1 root root   30 Oct 13 11:37 deepin-screenshot -> /data/github/deepin-screenshot
+drwxr-xr-x. 3 root root 4096 Oct 13 12:37 google
+lrwxrwxrwx. 1 root root   27 Oct 13 11:38 idea-IC -> /home/lzs/Downloads/idea-IC
+lrwxrwxrwx. 1 root root   30 Oct 13 11:38 scrt -> /home/lzs/Downloads/scrt-7.3.6
+lrwxrwxrwx. 1 root root   25 Oct 13 11:38 xmind -> /home/lzs/Downloads/xmind
 
 /usr/local/:
 total 40
 drwxr-xr-x. 2 root root 4096 Aug 16  2014 bin
-lrwxrwxrwx. 1 root root   34 Oct  5 17:36 boost -> /home/lzs/tencent/lib/boost_1_52_0
-lrwxrwxrwx. 1 root root   29 Oct  5 17:36 commlib -> /home/lzs/tencent/lib/commlib
-lrwxrwxrwx. 1 root root   41 Oct  5 17:37 dc_commonlib -> /home/lzs/tencent/lib/dc_commonlib_1.0.13
+lrwxrwxrwx. 1 root root   34 Oct 13 11:39 boost -> /home/lzs/tencent/lib/boost_1_52_0
+lrwxrwxrwx. 1 root root   29 Oct 13 11:39 commlib -> /home/lzs/tencent/lib/commlib
+lrwxrwxrwx. 1 root root   41 Oct 13 11:39 dc_commonlib -> /home/lzs/tencent/lib/dc_commonlib_1.0.13
 drwxr-xr-x. 2 root root 4096 Aug 16  2014 etc
 drwxr-xr-x. 2 root root 4096 Aug 16  2014 games
 drwxr-xr-x. 2 root root 4096 Aug 16  2014 include
-drwxr-xr-x. 2 root root 4096 Aug 16  2014 lib
+drwxr-xr-x. 3 root root 4096 Oct 17 16:10 lib
 drwxr-xr-x. 2 root root 4096 Aug 16  2014 lib64
-lrwxrwxrwx. 1 root root   30 Oct  5 17:37 libevent -> /home/lzs/tencent/lib/libevent
+lrwxrwxrwx. 1 root root   30 Oct 13 11:39 libevent -> /home/lzs/tencent/lib/libevent
 drwxr-xr-x. 2 root root 4096 Aug 16  2014 libexec
-lrwxrwxrwx. 1 root root   12 Oct  5 17:37 MATLAB -> /data/MATLAB
+lrwxrwxrwx. 1 root root   12 Oct 13 11:39 MATLAB -> /data/MATLAB
 drwxr-xr-x. 2 root root 4096 Aug 16  2014 sbin
-lrwxrwxrwx. 1 root root   28 Oct  5 17:37 scala -> /home/lzs/spark/scala-2.11.7
+lrwxrwxrwx. 1 root root   28 Oct 13 11:39 scala -> /home/lzs/spark/scala-2.11.7
 drwxr-xr-x. 5 root root 4096 May 22  2015 share
 drwxr-xr-x. 2 root root 4096 Aug 16  2014 src
-lrwxrwxrwx. 1 root root   39 Oct  5 17:38 srvframework2 -> /home/lzs/tencent/lib/srvframework2.7.2
+lrwxrwxrwx. 1 root root   39 Oct 13 11:39 srvframework2 -> /home/lzs/tencent/lib/srvframework2.7.2
