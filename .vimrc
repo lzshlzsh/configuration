@@ -30,11 +30,11 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 "Plugin 'Valloric/YouCompleteMe'
-Plugin 'https://github.com/ervandew/supertab'
+"Plugin 'https://github.com/ervandew/supertab'
 Plugin 'https://github.com/vim-scripts/Visual-Mark'
 Plugin 'https://github.com/vim-scripts/winmanager'
 Plugin 'https://github.com/scrooloose/nerdtree'
-Plugin 'https://github.com/vim-scripts/taglist.vim'
+" Plugin 'https://github.com/vim-scripts/taglist.vim'
 Plugin 'https://github.com/vim-scripts/minibufexpl.vim'
 Plugin 'https://github.com/vim-latex/vim-latex'
 Plugin 'https://github.com/derekwyatt/vim-scala'
@@ -48,6 +48,9 @@ Plugin 'https://github.com/suan/vim-instant-markdown.git'
 Plugin 'https://github.com/vim-scripts/vim-auto-save'
 Plugin 'https://github.com/kien/ctrlp.vim'
 Plugin 'https://github.com/ekalinin/Dockerfile.vim'
+Plugin 'https://github.com/fatih/vim-go.git'
+Plugin 'https://github.com/Shougo/neocomplete.vim.git'
+Plugin 'https://github.com/majutsushi/tagbar.git'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -161,9 +164,9 @@ endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set number
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
 set expandtab
 set nobackup
 " set autowrite
@@ -200,17 +203,27 @@ endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ctags & tlist
-let Tlist_Show_One_File=1  
-let Tlist_Exit_OnlyWindow=1  
-let Tlist_Use_SingleClick=1
+"let Tlist_Show_One_File=1  
+"let Tlist_Exit_OnlyWindow=1  
+"let Tlist_Use_SingleClick=1
 " let Tlist_Display_Prototype=1
 " map<F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" cscope
 map<C-F12> :!cscope -Rbq<CR>:cscope reset<CR><CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" fileencodings
 map<C-F11> : e ++enc=gb2312<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" winmanager & nerdtree
-let g:winManagerWindowLayout='NERDTree|TagList'
+" winmanager
+let g:winManagerWindowLayout='NERDTree|Tagbar'
+map<F2> :if IsWinManagerVisible()<BAR> WMToggle<CR> <BAR> else <BAR> WMToggle<CR>:q<CR> endif <CR> 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" nerdtree
 let g:NERDTree_title='[NERD Tree]'
 let NERDTreeWinPos="right"
 let g:NERDTreeMouseMode=3
@@ -221,8 +234,24 @@ endfunction
 function! NERDTree_IsValid()
     return 1
 endfunction
-map<F2> :if IsWinManagerVisible()<BAR> WMToggle<CR> <BAR> else <BAR> WMToggle<CR>:q<CR> endif <CR> 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" tagbar
+let g:Tagbar_title = "[Tagbar]"
+let g:tagbar_left = 1
+let g:tagbar_vertical = 20
+let g:tagbar_singleclick = 1
+
+"autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
+
+function! Tagbar_Start()
+    exe 'q'
+    exe 'TagbarToggle'
+endfunction
+ 
+function! Tagbar_IsValid()
+    return 1
+endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " cscope
 if has("cscope")
@@ -320,3 +349,78 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|a|swp|gz|bz2|o)$|cscope\.',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Note: This option must be set in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" Use neocomplete.
+let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+
+" Define dictionary.
+let g:neocomplete#sources#dictionary#dictionaries = {
+    \ 'default' : '',
+    \ 'vimshell' : $HOME.'/.vimshell_hist',
+    \ 'scheme' : $HOME.'/.gosh_completions'
+        \ }
+
+" Define keyword.
+if !exists('g:neocomplete#keyword_patterns')
+    let g:neocomplete#keyword_patterns = {}
+endif
+let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+
+" Plugin key-mappings.
+inoremap <expr><C-g>     neocomplete#undo_completion()
+inoremap <expr><C-l>     neocomplete#complete_common_string()
+
+" Recommended key-mappings.
+" <CR>: close popup and save indent.
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
+  " return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
+  " For no inserting <CR> key.
+  return pumvisible() ? "\<C-y>" : "\<CR>"
+endfunction
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" <C-h>, <BS>: close popup and delete backword char.
+inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+" Close popup by <Space>.
+"inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
+
+" AutoComplPop like behavior.
+" let g:neocomplete#enable_auto_select = 1
+
+" Shell like behavior(not recommended).
+"set completeopt+=longest
+"let g:neocomplete#enable_auto_select = 1
+"let g:neocomplete#disable_auto_complete = 1
+"inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
+
+" Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" Enable heavy omni completion.
+if !exists('g:neocomplete#sources#omni#input_patterns')
+  let g:neocomplete#sources#omni#input_patterns = {}
+endif
+"let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+"let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+"let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+
+" For perlomni.vim setting.
+" https://github.com/c9s/perlomni.vim
+let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
