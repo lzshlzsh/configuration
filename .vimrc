@@ -238,7 +238,7 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " tagbar
 let g:Tagbar_title = "[Tagbar]"
-let g:tagbar_left = 1
+let g:tagbar_left = 0
 let g:tagbar_vertical = 20
 let g:tagbar_singleclick = 1
 
