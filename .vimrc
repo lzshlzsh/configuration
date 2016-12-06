@@ -30,11 +30,11 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 "Plugin 'Valloric/YouCompleteMe'
-"Plugin 'https://github.com/ervandew/supertab'
+Plugin 'https://github.com/ervandew/supertab'
 Plugin 'https://github.com/vim-scripts/Visual-Mark'
 Plugin 'https://github.com/vim-scripts/winmanager'
 Plugin 'https://github.com/scrooloose/nerdtree'
-" Plugin 'https://github.com/vim-scripts/taglist.vim'
+"Plugin 'https://github.com/vim-scripts/taglist.vim'
 Plugin 'https://github.com/vim-scripts/minibufexpl.vim'
 Plugin 'https://github.com/vim-latex/vim-latex'
 Plugin 'https://github.com/derekwyatt/vim-scala'
@@ -49,7 +49,7 @@ Plugin 'https://github.com/vim-scripts/vim-auto-save'
 Plugin 'https://github.com/kien/ctrlp.vim'
 Plugin 'https://github.com/ekalinin/Dockerfile.vim'
 Plugin 'https://github.com/fatih/vim-go.git'
-Plugin 'https://github.com/Shougo/neocomplete.vim.git'
+"Plugin 'https://github.com/Shougo/neocomplete.vim.git'
 Plugin 'https://github.com/majutsushi/tagbar.git'
 
 " The following are examples of different formats supported.
