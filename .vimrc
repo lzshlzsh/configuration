@@ -241,6 +241,7 @@ let g:Tagbar_title = "[Tagbar]"
 let g:tagbar_left = 0
 let g:tagbar_vertical = 20
 let g:tagbar_singleclick = 1
+let g:tagbar_sort = 0
 
 "autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
 
