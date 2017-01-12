@@ -171,6 +171,7 @@ set expandtab
 set nobackup
 " set autowrite
 set autoread
+set cc=80
 
 "class A {
 "public: //g0
