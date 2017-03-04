@@ -52,6 +52,8 @@ Plugin 'https://github.com/fatih/vim-go.git'
 "Plugin 'https://github.com/Shougo/neocomplete.vim.git'
 Plugin 'https://github.com/majutsushi/tagbar.git'
 Plugin 'https://github.com/davidhalter/jedi-vim.git'
+Plugin 'https://github.com/godlygeek/tabular.git'
+"Plugin 'https://github.com/shawncplus/phpcomplete.vim.git'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
