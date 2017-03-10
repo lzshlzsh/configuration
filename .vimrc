@@ -443,3 +443,4 @@ let g:go_fmt_command = "goimports"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " python
 source ~/.google_python_style.vim
+let g:jedi#show_call_signatures = 2
