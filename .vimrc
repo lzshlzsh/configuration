@@ -54,6 +54,7 @@ Plugin 'https://github.com/majutsushi/tagbar.git'
 Plugin 'https://github.com/davidhalter/jedi-vim.git'
 Plugin 'https://github.com/godlygeek/tabular.git'
 "Plugin 'https://github.com/shawncplus/phpcomplete.vim.git'
+Plugin 'https://github.com/lzshlzsh/vim-plugin.git'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -167,14 +168,17 @@ endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set number
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+set cc=80
+"set shiftwidth=4
+"set tabstop=4
+"set softtabstop=4
 set expandtab
 set nobackup
 " set autowrite
 set autoread
-set cc=80
 
 "class A {
 "public: //g0
@@ -203,6 +207,7 @@ set nofoldenable
 " vimdiff
 if &diff
 	colors blue
+  autocmd FilterWritePre * setlocal wrap
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -441,6 +446,10 @@ let g:go_fmt_autosave = 0
 let g:go_fmt_command = "goimports"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" python
+" jedi-vim python
 source ~/.google_python_style.vim
 let g:jedi#show_call_signatures = 2
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" lzshlzsh/vim-plugin
+let g:lzs#use_python_plugin = 1
