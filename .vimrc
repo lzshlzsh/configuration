@@ -191,7 +191,7 @@ set cinoptions=g0,:0,(4,W4
 
 " set encoding=utf8
 " set termencoding=utf8
-set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
+set fileencodings=utf8,gb2312,gbk
 
 " Allow us to use Ctrl-s and Ctrl-q as keybinds
 silent !stty -ixon
