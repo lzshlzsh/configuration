@@ -171,27 +171,29 @@ set number
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
+set expandtab
+set nobackup
+set fileencodings=utf8,gb2312,gbk
+set textwidth=80
 set cc=80
+set autoread
 "set shiftwidth=4
 "set tabstop=4
 "set softtabstop=4
-set expandtab
-set nobackup
-" set autowrite
-set autoread
+"set autowrite
 
 "class A {
-"public: //g0
+" public: //g0
 "};
 "switch (x) {
 "case 1: //:0
 "}
 " \@ref http://vimdoc.sourceforge.net/htmldoc/indent.html
-set cinoptions=g0,:0,(4,W4
+"set cinoptions=g0,:0,(4,W4
+set cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4,:0
 
-" set encoding=utf8
-" set termencoding=utf8
-set fileencodings=utf8,gb2312,gbk
+"set encoding=utf8
+"set termencoding=utf8
 
 " Allow us to use Ctrl-s and Ctrl-q as keybinds
 silent !stty -ixon
