@@ -12,4 +12,4 @@ UUID=0983-EFB5          /boot/efi               vfat    umask=0077,shortname=win
 /dev/mapper/fedora_msata-swap swap                    swap    defaults        0 0
 /dev/mapper/fedora_msata-home /home ext4 defaults 0 0
 /dev/mapper/fedora_sata3-data /data ext4 defaults 0 0
-//10.125.42.37/sammieliu /home/lzs/tencent/dev64 cifs user=sammieliu,pass=sammieliu_1,uid=1000,gid=1000 0 0
+#//10.125.42.37/sammieliu /home/lzs/tencent/dev64 cifs user=sammieliu,pass=sammieliu_1,uid=1000,gid=1000 0 0

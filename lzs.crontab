@@ -1,0 +1,1 @@
+*/10 * * * * /home/oicq/bin/script_common_lib/sync_git_repo.sh /home/oicq/bin/script_common_lib/sync_git_repo.conf >/data/log/script_common_lib/sync_git_repo.$(date +\%M).log 2>&1 &

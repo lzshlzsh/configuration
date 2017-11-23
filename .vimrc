@@ -190,7 +190,7 @@ set autoread
 "}
 " \@ref http://vimdoc.sourceforge.net/htmldoc/indent.html
 "set cinoptions=g0,:0,(4,W4
-set cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4,:0
+set cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4,u0
 
 "set encoding=utf8
 "set termencoding=utf8
