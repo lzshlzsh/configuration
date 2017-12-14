@@ -174,7 +174,7 @@ set softtabstop=2
 set expandtab
 set nobackup
 set fileencodings=utf8,gb2312,gbk
-set textwidth=80
+"set textwidth=80
 set cc=80
 set autoread
 "set shiftwidth=4
