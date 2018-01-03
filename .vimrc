@@ -41,7 +41,7 @@ Plugin 'https://github.com/derekwyatt/vim-scala'
 Plugin 'https://github.com/leshill/vim-json'
 Plugin 'https://github.com/vim-scripts/c.vim'
 Plugin 'https://github.com/nathanaelkane/vim-indent-guides'
-Plugin 'https://github.com/mbriggs/mark.vim'
+Plugin 'https://github.com/inkarkat/vim-mark.git'
 Plugin 'https://github.com/vim-scripts/a.vim'
 Plugin 'https://github.com/plasticboy/vim-markdown.git'
 Plugin 'https://github.com/suan/vim-instant-markdown.git'
@@ -174,9 +174,9 @@ set softtabstop=2
 set expandtab
 set nobackup
 set fileencodings=utf8,gb2312,gbk
-"set textwidth=80
 set cc=80
 set autoread
+"set textwidth=80
 "set shiftwidth=4
 "set tabstop=4
 "set softtabstop=4
