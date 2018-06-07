@@ -190,8 +190,9 @@ set autoread
 "case 1: //:0
 "}
 " \@ref http://vimdoc.sourceforge.net/htmldoc/indent.html
+" \@ref vim help cino
 "set cinoptions=g0,:0,(4,W4
-set cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4,u0
+set cinoptions=h1,l1,g1,t0,i0,+2,(0,w1,W2,u0,N-s,E-s,p0
 
 "set encoding=utf8
 "set termencoding=utf8
