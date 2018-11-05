@@ -234,6 +234,7 @@ map<C-F11> : e ++enc=gb2312<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " winmanager
 let g:winManagerWindowLayout='NERDTree|Tagbar'
+let g:winManagerWidth = 45
 map<F2> :if IsWinManagerVisible()<BAR> WMToggle<CR> <BAR> else <BAR> WMToggle<CR>:q<CR> endif <CR> 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
