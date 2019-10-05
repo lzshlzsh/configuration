@@ -56,6 +56,7 @@ Plugin 'https://github.com/davidhalter/jedi-vim.git'
 Plugin 'https://github.com/godlygeek/tabular.git'
 "Plugin 'https://github.com/shawncplus/phpcomplete.vim.git'
 Plugin 'https://github.com/lzshlzsh/vim-plugin.git'
+Plugin 'https://github.com/vim-scripts/AnsiEsc.vim.git'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
