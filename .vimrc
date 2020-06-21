@@ -176,7 +176,7 @@ set softtabstop=2
 set expandtab
 set nobackup
 set fileencodings=utf8,gb2312,gbk
-set cc=80
+set cc=120
 set autoread
 let g:python_recommended_style=0
 "set textwidth=80
