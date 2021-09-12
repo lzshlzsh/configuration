@@ -1,0 +1,4 @@
+[repo.yandex.ru_clickhouse_rpm_stable_x86_64]
+name=clickhouse stable
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/clickhouse/rpm/stable/x86_64
+enabled=1

@@ -1,6 +1,6 @@
 [scootersoftware]
 name=Scooter Software
-baseurl=http://www.scootersoftware.com/bcompare4
+baseurl=https://www.scootersoftware.com/bcompare4
 enabled=1
 gpgcheck=1
-gpgkey=http://www.scootersoftware.com/RPM-GPG-KEY-scootersoftware
+gpgkey=https://www.scootersoftware.com/RPM-GPG-KEY-scootersoftware
