@@ -179,6 +179,7 @@ set fileencodings=utf8,gb2312,gbk
 set cc=120
 set autoread
 let g:python_recommended_style=0
+set ignorecase
 "set textwidth=80
 "set shiftwidth=4
 "set tabstop=4
