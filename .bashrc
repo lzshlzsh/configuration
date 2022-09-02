@@ -81,3 +81,10 @@ export HADOOP_USER_NAME=hadoop
 export PATH=$PATH:$HOME/.software/helm/linux-amd64
 
 export PATH="$PATH:$HOME/.ft"
+
+export MAVEN_HOME=$HOME/.software/apache-maven
+export PATH=$PATH:$MAVEN_HOME/bin
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
