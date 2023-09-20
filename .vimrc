@@ -272,22 +272,22 @@ function! Tagbar_IsValid()
 endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " cscope
-if has("cscope")
-    set csprg=/usr/bin/cscope
-    set csto=0
-    set cst
-    set nocsverb
-    " add any database in current directory
-    if filereadable("cscope.out")         
-        cs add cscope.out
-        " else add database pointed to by environment 
-    endif
-    if $CSCOPE_DB != ""
-        cs add $CSCOPE_DB
-    endif
-    set csverb
-"    set cscopequickfix=s-,c-,d-,i-,t-,e-
-endif
+"if has("cscope")
+"    set csprg=/opt/homebrew/bin/cscope
+"    set csto=0
+"    set cst
+"    set nocsverb
+"    " add any database in current directory
+"    if filereadable("cscope.out")         
+"        cs add cscope.out
+"        " else add database pointed to by environment 
+"    endif
+"    if $CSCOPE_DB != ""
+"        cs add $CSCOPE_DB
+"    endif
+"    set csverb
+""    set cscopequickfix=s-,c-,d-,i-,t-,e-
+"endif
 nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
 nmap <C-_>c :cs find c <C-R>=expand("<cword>")<CR><CR>

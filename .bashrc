@@ -77,7 +77,7 @@ function hadoop3() {
   export PATH="$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$HBASE_HOME/bin:$HIVE_HOME/bin:$HIVE_HOME/hcatalog/sbin"
 }
 
-hadoop3
+hadoop2
 
 export PYTHONPATH=$HOME/programming/python-test/site-packages
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
