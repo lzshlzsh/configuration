@@ -103,3 +103,9 @@ export PATH=$HOME/.software/apache-pulsar/bin:$PATH
 export PATH=/opt/Qt/QtIFW-4.5.2/bin:$PATH
 
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+
+export PATH="$(brew --prefix bison)/bin:$PATH"
+export PATH="$HOME/programming/bash-test/oceanus:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+export PATH="/usr/local/opt/mysql-client@8.0/bin:$PATH"
