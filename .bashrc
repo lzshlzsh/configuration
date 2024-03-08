@@ -108,4 +108,7 @@ export PATH="$(brew --prefix bison)/bin:$PATH"
 export PATH="$HOME/programming/bash-test/oceanus:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-export PATH="/usr/local/opt/mysql-client@8.0/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"
+
+export PS1='lzs:\W\$ '
+eval "$(/opt/homebrew/bin/brew shellenv)"
