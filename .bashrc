@@ -77,7 +77,7 @@ function hadoop3() {
   export PATH="$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$HBASE_HOME/bin:$HIVE_HOME/bin:$HIVE_HOME/hcatalog/sbin"
 }
 
-hadoop2
+hadoop3
 
 export PYTHONPATH=$HOME/programming/python-test/site-packages
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
@@ -109,6 +109,7 @@ export PATH="$HOME/programming/bash-test/oceanus:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"
+export PATH=$PATH:$HOME/.bin
 
 export PS1='lzs:\W\$ '
 eval "$(/opt/homebrew/bin/brew shellenv)"
